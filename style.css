@@ -1,0 +1,28 @@
+body{
+    margin: 0px;
+}
+div#sidebar{
+    width: 20vw;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background-color: beige;
+    height: 100%;
+}
+img#logo{
+    width: 100%;
+}
+div#main{
+    width: 80vw;
+    position: absolute;
+    top:0px;
+    left: 20vw;
+    height: 100%;
+}
+form{
+    width:100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
