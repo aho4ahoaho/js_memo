@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    overflow:hidden;
 }
 div#sidebar{
     width: 20vw;
@@ -18,6 +19,7 @@ div#main{
     top:0px;
     left: 20vw;
     height: 100%;
+    padding:0px;
 }
 form{
     width:100%;
@@ -25,4 +27,41 @@ form{
 }
 ul{
     list-style: none;
+}
+div#main ul{
+    width: 78vw;
+    height: calc(100vh - 2vw);
+    padding: 1vw;
+    margin: 0px;
+}
+div#main li:not(:nth-of-type(2)){
+    margin: 2vh 0px;
+    height: 10vh;
+}
+div#main li:nth-of-type(2){
+    margin: 2vh 0px;
+    height: 71vh;
+}
+div#main li *:not(textarea){
+    margin: 0px;
+    width: 100%;
+    height: 5vh;
+}
+div#main textarea{
+    resize:none;
+    border:groove 1px;
+    width: calc(100% - 2px);
+    height:66vh;
+    padding: 0px;
+}
+div#main #titlebox{
+    border: groove 1px;
+    width: calc(100% - 2px);
+    padding: 0px;
+}
+div#main>ul>li>input:not(#titlebox){
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    right: 1vw;
 }

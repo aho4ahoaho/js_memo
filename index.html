@@ -12,11 +12,18 @@
 <body>
     <div id="sidebar">
         <img src="logo.png" alt="ロゴ" id="logo">
+        <div id="list"></div>
     </div>
     <div id="main">
         <ul>
-            <li><input type="text" name="title" id="titlebox"></li>
-            <li><textarea name="memo" id="textbox" cols="30" rows="10"></textarea></li>
+            <li>
+                <p>タイトル</p>
+                <input type="text" name="title" id="titlebox">
+            </li>
+            <li>
+                <p>本文</p>
+                <textarea name="memo" id="textbox" cols="30" rows="10"></textarea>
+            </li>
             <li><input type="button" value="submit" onclick="submit()"></li>
         </ul>
     </div>
