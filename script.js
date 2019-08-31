@@ -7,9 +7,11 @@ function list_view(){
     while (document.getElementById("list").firstChild) {
         document.getElementById("list").removeChild(document.getElementById("list").firstChild);
       }
-    let array = localStorage.getItem("list").replace("null","").split(";"); //配列の中にWebストレージのリストの値を代入する。
+    let array = localStorage.getItem("list").replace("null;","").replace(";;",";").split(";"); //配列の中にWebストレージのリストの値を代入する。
     array.forEach(function (value) {//配列の数だけリストに表示しておく
-        document.getElementById("list").insertAdjacentHTML("afterbegin", `<p class="list" onclick="list_click(this)" id=`+value+`>` + value + "</p>");
+        if(value != ""){
+            document.getElementById("list").insertAdjacentHTML("afterbegin", `<p class="list" onclick="list_click(this)" id=`+value+`>` + value + "</p>");
+        }
     });
 }
 
