@@ -11,8 +11,9 @@
 
 <body>
     <div id="sidebar">
-        <img src="logo.png" alt="ロゴ" id="logo">
+        <img src="image/logo.png" alt="ロゴ" id="logo">
         <div id="list"></div>
+        <p onclick="new_list()">新規作成</p>
     </div>
     <div id="main">
         <ul>
@@ -24,7 +25,7 @@
                 <p>本文</p>
                 <textarea name="memo" id="textbox" cols="30" rows="10"></textarea>
             </li>
-            <li><input type="button" value="submit" onclick="submit()"></li>
+            <li><img src="image/computer_zip_disk.png" alt="保存ボタン" onclick="save()"></li>
         </ul>
     </div>
 </body>

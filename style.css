@@ -13,6 +13,21 @@ div#sidebar{
 img#logo{
     width: 100%;
 }
+div#sidebar div p.list{
+    font-size: 2vh;
+}
+div#sidebar>p{
+    position: absolute;
+    width: 20vw;
+    height: 5vh;
+    margin:0px;
+    padding: 2vh 0px;
+    bottom: 0px;
+    font-size: 4vh;
+    text-align: center;
+    border-top-style:solid;
+    user-select:none;
+}
 div#main{
     width: 80vw;
     position: absolute;
@@ -59,8 +74,8 @@ div#main #titlebox{
     width: calc(100% - 2px);
     padding: 0px;
 }
-div#main>ul>li>input:not(#titlebox){
-    width: 10vh;
+div#main>ul>li>img{
+    width: 20vh;
     height: 10vh;
     position: absolute;
     right: 1vw;
